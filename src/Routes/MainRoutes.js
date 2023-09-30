@@ -1,6 +1,6 @@
 import React from 'react'
 import {BrowserRouter as Router , Route} from 'react-router-dom'
-import Home from '../Pages/Home'
+import Store from '../Pages/store'
 import Signup from '../Pages/Signup'
 import Login from '../Pages/Login'
 import CreatePost from '../Pages/CreatePost'
@@ -14,7 +14,7 @@ function MainRoutes() {
     return (
        <Router>
            <Route exact path="/">
-               <Home/>
+               <Store/>
            </Route>
            <Route path="/signup">
                <Signup/>

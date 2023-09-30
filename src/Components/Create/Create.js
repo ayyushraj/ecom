@@ -4,7 +4,6 @@ import Header from "../Header/Header";
 import { Firebase } from "../../firebase/config";
 import { AuthContext } from "../../contextStore/AuthContext";
 import { useHistory } from "react-router";
-import GoLoading from "../Loading/GoLoading";
 const Create = () => {
   const { user } = useContext(AuthContext);
   const history = useHistory();
@@ -42,7 +41,7 @@ const Create = () => {
   return (
     <Fragment>
       <Header />
-    { loading && <GoLoading/> }
+    { loading}
       <div className="centerDiv">
         <label>Name</label>
         <br />

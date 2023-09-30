@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../olx-logo.png";
+import Logo from "../../E_Revive__2.png";
 import "./Signup.css";
 import { Firebase } from "../../firebase/config";
 import { useHistory } from "react-router";
-import SignUpLoading from "../Loading/SignUpLoading";
+
 
 export default function Signup() {
   const history = useHistory();
@@ -32,7 +32,7 @@ export default function Signup() {
       });
   };
   return (<>
-    {loading && <SignUpLoading/> } <div>
+    {loading} <div>
       <div className="signupParentDiv">
         <img width="200px" height="200px" src={Logo} alt=""></img>
         <form onSubmit={handleSubmit}>

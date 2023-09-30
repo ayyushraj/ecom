@@ -1,6 +1,13 @@
 {
   "short_name": "React App",
-  "name": "Create React App OLX",
+  "name": "Create React App E-Revive",
+  "icons":[
+    {
+      "src": "../src/E_Revive__2.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",

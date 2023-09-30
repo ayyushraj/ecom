@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {useHistory} from "react-router-dom";
 import { Firebase } from "../../firebase/config";
-import Logo from "../../olx-logo.png";
-import RoundLoading from "../Loading/RoundLoading";
+import Logo from "../../E_Revive__2.png";
+
 import "./Login.css";
 
 function Login() {
@@ -22,7 +22,7 @@ function Login() {
 
   };
   return (<>
-    {loading && <RoundLoading/> }
+    {loading}
     <div>
       <div className="loginParentDiv">
         <img width="200px" height="200px" src={Logo} alt=""></img>
@@ -32,7 +32,7 @@ function Login() {
           <input
             className="input"
             type="email"
-            placeholder="sijeesh@gmail.com"
+            placeholder="mailid@gmail.com"
             name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}

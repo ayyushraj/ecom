@@ -8,7 +8,7 @@ import Footer from '../Components/Footer/Footer';
 import { Firebase } from '../firebase/config';
 import { AuthContext } from '../contextStore/AuthContext';
 
-function Home(props) {
+function store(props) {
  const {setUser}=useContext(AuthContext)
   useEffect(()=>{
     
@@ -30,5 +30,5 @@ function Home(props) {
   );
 }
 
-export default Home;
+export default store;
  
