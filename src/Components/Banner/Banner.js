@@ -25,6 +25,7 @@ function Banner() {
               <option value="Mobile Phones">Mobile Phones</option>
               <option value="Motorcycles">Motorcycles</option>
               <option value="Tablets">Tablets</option>
+              <option value="Industrial">Industrial</option>
             </select>
           </div>
           <div className="otherQuickOptions">
